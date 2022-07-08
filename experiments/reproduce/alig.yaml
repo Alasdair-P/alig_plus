@@ -1,0 +1,4 @@
+- {model: rn, opt: alig_plus, eta: 0.1}
+- {model: rn, opt: alig_plus, eta: 0.1, weight_decay: 1e-3}
+- {model: rn, opt: alig_plus, eta: 0.1, weight_decay: 1e-4}
+- {model: rn, opt: alig_plus, eta: 0.1, weight_decay: 1e-5}

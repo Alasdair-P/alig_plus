@@ -1,0 +1,69 @@
+
+- {model: rn, batch_size: 128, opt: sgd_armijo, epochs: 200, depth: 10, l2_reg: 1e-3}   
+- {model: rn, batch_size: 128, opt: sgd_armijo, epochs: 200, depth: 10, l2_reg: 1e-4}   
+- {model: rn, batch_size: 128, opt: sgd_armijo, epochs: 200, depth: 10, l2_reg: 1e-5}   
+- {model: rn, batch_size: 128, opt: sgd_armijo, epochs: 200, depth: 10}   
+
+- {model: rn, batch_size: 128, opt: sgd_goldstein, eta: 1.0, epochs: 200, depth: 10, l2_reg: 1e-3}
+- {model: rn, batch_size: 128, opt: sgd_goldstein, eta: 1.0, epochs: 200, depth: 10, l2_reg: 1e-4}
+- {model: rn, batch_size: 128, opt: sgd_goldstein, eta: 1.0, epochs: 200, depth: 10, l2_reg: 1e-5}
+- {model: rn, batch_size: 128, opt: sgd_goldstein, eta: 1.0, epochs: 200, depth: 10}
+- {model: rn, batch_size: 128, opt: sgd_goldstein, eta: 10.0, epochs: 200, depth: 10, l2_reg: 1e-3}
+- {model: rn, batch_size: 128, opt: sgd_goldstein, eta: 10.0, epochs: 200, depth: 10, l2_reg: 1e-4}
+- {model: rn, batch_size: 128, opt: sgd_goldstein, eta: 10.0, epochs: 200, depth: 10, l2_reg: 1e-5}
+- {model: rn, batch_size: 128, opt: sgd_goldstein, eta: 10.0, epochs: 200, depth: 10}
+
+- {model: rn, batch_size: 128, opt: sgd_polyak, epochs: 200, depth: 10, l2_reg: 1e-3}
+- {model: rn, batch_size: 128, opt: sgd_polyak, epochs: 200, depth: 10, l2_reg: 1e-4}
+- {model: rn, batch_size: 128, opt: sgd_polyak, epochs: 200, depth: 10, l2_reg: 1e-5}
+- {model: rn, batch_size: 128, opt: sgd_polyak, epochs: 200, depth: 10}
+
+- {model: rn, batch_size: 128, opt: adam, eta: 0.001, epochs: 200, depth: 10, weight_decay: 1e-3}
+- {model: rn, batch_size: 128, opt: adam, eta: 0.001, epochs: 200, depth: 10, weight_decay: 1e-4}
+- {model: rn, batch_size: 128, opt: adam, eta: 0.001, epochs: 200, depth: 10, weight_decay: 1e-5}
+- {model: rn, batch_size: 128, opt: adam, eta: 0.001, epochs: 200, depth: 10}
+- {model: rn, batch_size: 128, opt: adam, eta: 0.01, epochs: 200, depth: 10, weight_decay: 1e-3}
+- {model: rn, batch_size: 128, opt: adam, eta: 0.01, epochs: 200, depth: 10, weight_decay: 1e-5}
+- {model: rn, batch_size: 128, opt: adam, eta: 0.01, epochs: 200, depth: 10, weight_decay: 1e-4}
+- {model: rn, batch_size: 128, opt: adam, eta: 0.01, epochs: 200, depth: 10}
+
+- {model: rn, batch_size: 128, opt: adabound, eta: 0.001, epochs: 200, depth: 10, weight_decay: 1e-3}
+- {model: rn, batch_size: 128, opt: adabound, eta: 0.001, epochs: 200, depth: 10, weight_decay: 1e-4}
+- {model: rn, batch_size: 128, opt: adabound, eta: 0.001, epochs: 200, depth: 10, weight_decay: 1e-5}
+- {model: rn, batch_size: 128, opt: adabound, eta: 0.001, epochs: 200, depth: 10}
+- {model: rn, batch_size: 128, opt: adabound, eta: 0.01, epochs: 200, depth: 10, weight_decay: 1e-3}
+- {model: rn, batch_size: 128, opt: adabound, eta: 0.01, epochs: 200, depth: 10, weight_decay: 1e-4}
+- {model: rn, batch_size: 128, opt: adabound, eta: 0.01, epochs: 200, depth: 10, weight_decay: 1e-5}
+- {model: rn, batch_size: 128, opt: adabound, eta: 0.01, epochs: 200, depth: 10}
+
+- {model: rn, batch_size: 128, opt: coin, epochs: 200, depth: 10, l2_reg: 1e-3}
+- {model: rn, batch_size: 128, opt: coin, epochs: 200, depth: 10, l2_reg: 1e-4}
+- {model: rn, batch_size: 128, opt: coin, epochs: 200, depth: 10, l2_reg: 1e-5}
+- {model: rn, batch_size: 128, opt: coin, epochs: 200, depth: 10}
+
+- {model: rn, batch_size: 128, opt: sgd, eta: 0.1,  epochs: 200, depth: 10, T: 100 150, weight_decay: 1e-3}
+- {model: rn, batch_size: 128, opt: sgd, eta: 0.1,  epochs: 200, depth: 10, T: 100 150, weight_decay: 1e-4}
+- {model: rn, batch_size: 128, opt: sgd, eta: 0.1,  epochs: 200, depth: 10, T: 100 150, weight_decay: 1e-5}
+- {model: rn, batch_size: 128, opt: sgd, eta: 0.1,  epochs: 200, depth: 10, T: 100 150}
+- {model: rn, batch_size: 128, opt: sgd, eta: 1.0,  epochs: 200, depth: 10, T: 100 150, weight_decay: 1e-3}
+- {model: rn, batch_size: 128, opt: sgd, eta: 1.0,  epochs: 200, depth: 10, T: 100 150, weight_decay: 1e-4}
+- {model: rn, batch_size: 128, opt: sgd, eta: 1.0,  epochs: 200, depth: 10, T: 100 150, weight_decay: 1e-5}
+- {model: rn, batch_size: 128, opt: sgd, eta: 1.0,  epochs: 200, depth: 10, T: 100 150}
+
+- {model: rn, batch_size: 128, opt: aalig, eta: 1.0, epochs: 200, depth: 10}
+- {model: rn, batch_size: 128, opt: aalig, eta: 1.0, epochs: 200, depth: 10, weight_decay: 1e-3}
+- {model: rn, batch_size: 128, opt: aalig, eta: 1.0, epochs: 200, depth: 10, weight_decay: 1e-4}
+- {model: rn, batch_size: 128, opt: aalig, eta: 1.0, epochs: 200, depth: 10, weight_decay: 1e-5}
+- {model: rn, batch_size: 128, opt: aalig, eta: 0.1, epochs: 200, depth: 10}
+- {model: rn, batch_size: 128, opt: aalig, eta: 0.1, epochs: 200, depth: 10, weight_decay: 1e-3}
+- {model: rn, batch_size: 128, opt: aalig, eta: 0.1, epochs: 200, depth: 10, weight_decay: 1e-4}
+- {model: rn, batch_size: 128, opt: aalig, eta: 0.1, epochs: 200, depth: 10, weight_decay: 1e-5}
+
+- {model: rn, batch_size: 128, opt: pal, eta: 1.0, epochs: 200, depth: 10, l2_reg: 1e-3}
+- {model: rn, batch_size: 128, opt: pal, eta: 1.0, epochs: 200, depth: 10, l2_reg: 1e-4}
+- {model: rn, batch_size: 128, opt: pal, eta: 1.0, epochs: 200, depth: 10, l2_reg: 1e-5}
+- {model: rn, batch_size: 128, opt: pal, eta: 1.0, epochs: 200, depth: 10}
+
+
+
+

@@ -1,0 +1,10 @@
+dataset,cifar100,model,rn,opt,alig_plus,bs,16,eta,1.0,wd,0,max_norm,None,tr_acc,1.0133,val_acc,1.3200,te_acc,1.0000,name,/data0/clean/results/cifar100/rn100-alig_plus--eta-1.0--l2-None--b-16-da--momentum-0.9
+dataset,cifar10,model,rn,opt,alig_plus,bs,16,eta,1.0,wd,0,max_norm,None,tr_acc,10.1200,val_acc,10.7200,te_acc,10.0000,name,/data0/clean/results/cifar10/rn10-alig_plus--eta-1.0--l2-None--b-16-da--momentum-0.9
+dataset,cifar10,model,rn,opt,alig_plus,bs,16,eta,0.1,wd,0,max_norm,None,tr_acc,91.0000,val_acc,87.4600,te_acc,86.8000,name,/data0/clean/results/cifar10/rn10-alig_plus--eta-0.1--l2-None--b-16-da--momentum-0.9
+dataset,cifar100,model,rn,opt,alig_plus,bs,16,eta,0.1,wd,0,max_norm,None,tr_acc,62.4089,val_acc,56.2400,te_acc,56.6200,name,/data0/clean/results/cifar100/rn100-alig_plus--eta-0.1--l2-None--b-16-da--momentum-0.9
+dataset,cifar10,model,rn,opt,alig_plus,bs,16,eta,0.1,wd,0.001,max_norm,None,tr_acc,79.9111,val_acc,82.2000,te_acc,81.5500,name,/data0/clean/results/cifar10/rn10-alig_plus--eta-0.1--l2-0.001--b-16-da--momentum-0.9
+dataset,cifar100,model,rn,opt,alig_plus,bs,16,eta,0.1,wd,0.001,max_norm,None,tr_acc,47.4911,val_acc,48.4600,te_acc,48.6000,name,/data0/clean/results/cifar100/rn100-alig_plus--eta-0.1--l2-0.001--b-16-da--momentum-0.9
+dataset,cifar10,model,rn,opt,alig_plus,bs,16,eta,0.1,wd,0.0001,max_norm,None,tr_acc,87.9822,val_acc,87.0800,te_acc,86.4300,name,/data0/clean/results/cifar10/rn10-alig_plus--eta-0.1--l2-0.0001--b-16-da--momentum-0.9
+dataset,cifar100,model,rn,opt,alig_plus,bs,16,eta,0.1,wd,0.0001,max_norm,None,tr_acc,59.1444,val_acc,56.2600,te_acc,56.3500,name,/data0/clean/results/cifar100/rn100-alig_plus--eta-0.1--l2-0.0001--b-16-da--momentum-0.9
+dataset,cifar10,model,rn,opt,alig_plus,bs,16,eta,0.1,wd,1e-05,max_norm,None,tr_acc,90.7778,val_acc,87.7600,te_acc,86.5700,name,/data0/clean/results/cifar10/rn10-alig_plus--eta-0.1--l2-1e-05--b-16-da--momentum-0.9
+dataset,cifar100,model,rn,opt,alig_plus,bs,16,eta,0.1,wd,1e-05,max_norm,None,tr_acc,63.0333,val_acc,57.5200,te_acc,56.9700,name,/data0/clean/results/cifar100/rn100-alig_plus--eta-0.1--l2-1e-05--b-16-da--momentum-0.9

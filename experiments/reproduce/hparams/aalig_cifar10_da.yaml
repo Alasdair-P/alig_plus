@@ -1,0 +1,133 @@
+- {model: rn, dataset: cifar10, batch_size: 128, opt: aalig, eta: 1.0, tag: data-aug-3, epochs: 200, depth: 10, t: 20, mul: 0, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: aalig, eta: 1.0, tag: data-aug-3, epochs: 200, depth: 10, t: 20, weight_decay: 1e-3, mul: 0, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: aalig, eta: 1.0, tag: data-aug-3, epochs: 200, depth: 10, t: 20, weight_decay: 1e-4, mul: 0, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: aalig, eta: 1.0, tag: data-aug-3, epochs: 200, depth: 10, t: 20, weight_decay: 1e-5, mul: 0, seed: 3}
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: aalig, eta: 0.1, tag: data-aug-3, epochs: 200, depth: 10, t: 20, mul: 0, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: aalig, eta: 0.1, tag: data-aug-3, epochs: 200, depth: 10, t: 20, weight_decay: 1e-3, mul: 0, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: aalig, eta: 0.1, tag: data-aug-3, epochs: 200, depth: 10, t: 20, weight_decay: 1e-4, mul: 0, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: aalig, eta: 0.1, tag: data-aug-3, epochs: 200, depth: 10, t: 20, weight_decay: 1e-5, mul: 0, seed: 3}
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_armijo, tag: data-aug-3, epochs: 200, depth: 10, l2_reg: 1e-3, seed: 3}   
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_armijo, tag: data-aug-3, epochs: 200, depth: 10, l2_reg: 1e-4, seed: 3}   
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_armijo, tag: data-aug-3, epochs: 200, depth: 10, l2_reg: 1e-5, seed: 3}   
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_armijo, tag: data-aug-3, epochs: 200, depth: 10, seed: 3}   
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_polyak, tag: data-aug-3, epochs: 200, depth: 10, l2_reg: 1e-3, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_polyak, tag: data-aug-3, epochs: 200, depth: 10, l2_reg: 1e-4, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_polyak, tag: data-aug-3, epochs: 200, depth: 10, l2_reg: 1e-5, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_polyak, tag: data-aug-3, epochs: 200, depth: 10, seed: 3}
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adam, eta: 0.001, tag: data-aug-3, epochs: 200, depth: 10, weight_decay: 1e-3, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adam, eta: 0.001, tag: data-aug-3, epochs: 200, depth: 10, weight_decay: 1e-4, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adam, eta: 0.001, tag: data-aug-3, epochs: 200, depth: 10, weight_decay: 1e-5, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adam, eta: 0.001, tag: data-aug-3, epochs: 200, depth: 10, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adam, eta: 0.01, tag: data-aug-3, epochs: 200, depth: 10, weight_decay: 1e-3, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adam, eta: 0.01, tag: data-aug-3, epochs: 200, depth: 10, weight_decay: 1e-5, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adam, eta: 0.01, tag: data-aug-3, epochs: 200, depth: 10, weight_decay: 1e-4, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adam, eta: 0.01, tag: data-aug-3, epochs: 200, depth: 10, seed: 3}
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adabound, eta: 0.001, tag: data-aug-3, epochs: 200, depth: 10, weight_decay: 1e-3, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adabound, eta: 0.001, tag: data-aug-3, epochs: 200, depth: 10, weight_decay: 1e-4, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adabound, eta: 0.001, tag: data-aug-3, epochs: 200, depth: 10, weight_decay: 1e-5, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adabound, eta: 0.001, tag: data-aug-3, epochs: 200, depth: 10, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adabound, eta: 0.01, tag: data-aug-3, epochs: 200, depth: 10, weight_decay: 1e-3, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adabound, eta: 0.01, tag: data-aug-3, epochs: 200, depth: 10, weight_decay: 1e-4, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adabound, eta: 0.01, tag: data-aug-3, epochs: 200, depth: 10, weight_decay: 1e-5, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adabound, eta: 0.01, tag: data-aug-3, epochs: 200, depth: 10, seed: 3}
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: coin, tag: data-aug-3, epochs: 200, depth: 10, l2_reg: 1e-3, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: coin, tag: data-aug-3, epochs: 200, depth: 10, l2_reg: 1e-4, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: coin, tag: data-aug-3, epochs: 200, depth: 10, l2_reg: 1e-5, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: coin, tag: data-aug-3, epochs: 200, depth: 10, seed: 3}
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd, eta: 0.1, tag: data-aug-3,  epochs: 200, depth: 10, T: 100 150, weight_decay: 1e-3, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd, eta: 0.1, tag: data-aug-3,  epochs: 200, depth: 10, T: 100 150, weight_decay: 1e-4, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd, eta: 0.1, tag: data-aug-3,  epochs: 200, depth: 10, T: 100 150, weight_decay: 1e-5, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd, eta: 0.1, tag: data-aug-3,  epochs: 200, depth: 10, T: 100 150, seed: 3}
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd, eta: 1.0, tag: data-aug-3,  epochs: 200, depth: 10, T: 100 150, weight_decay: 1e-3, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd, eta: 1.0, tag: data-aug-3,  epochs: 200, depth: 10, T: 100 150, weight_decay: 1e-4, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd, eta: 1.0, tag: data-aug-3,  epochs: 200, depth: 10, T: 100 150, weight_decay: 1e-5, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd, eta: 1.0, tag: data-aug-3,  epochs: 200, depth: 10, T: 100 150, seed: 3}
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: pal, eta: 1.0, tag: data-aug-3, epochs: 200, depth: 10, l2_reg: 1e-3, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: pal, eta: 1.0, tag: data-aug-3, epochs: 200, depth: 10, l2_reg: 1e-4, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: pal, eta: 1.0, tag: data-aug-3, epochs: 200, depth: 10, l2_reg: 1e-5, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: pal, eta: 1.0, tag: data-aug-3, epochs: 200, depth: 10, seed: 3}
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_goldstein, eta: 1.0, tag: data-aug-3, epochs: 200, depth: 10, l2_reg: 1e-3, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_goldstein, eta: 1.0, tag: data-aug-3, epochs: 200, depth: 10, l2_reg: 1e-4, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_goldstein, eta: 1.0, tag: data-aug-3, epochs: 200, depth: 10, l2_reg: 1e-5, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_goldstein, eta: 1.0, tag: data-aug-3, epochs: 200, depth: 10, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_goldstein, eta: 10.0, tag: data-aug-3, epochs: 200, depth: 10, l2_reg: 1e-3, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_goldstein, eta: 10.0, tag: data-aug-3, epochs: 200, depth: 10, l2_reg: 1e-4, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_goldstein, eta: 10.0, tag: data-aug-3, epochs: 200, depth: 10, l2_reg: 1e-5, seed: 3}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_goldstein, eta: 10.0, tag: data-aug-3, epochs: 200, depth: 10, seed: 3}
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: aalig, eta: 1.0, tag: data-aug-4, epochs: 200, depth: 10, t: 20, mul: 0, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: aalig, eta: 1.0, tag: data-aug-4, epochs: 200, depth: 10, t: 20, weight_decay: 1e-3, mul: 0, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: aalig, eta: 1.0, tag: data-aug-4, epochs: 200, depth: 10, t: 20, weight_decay: 1e-4, mul: 0, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: aalig, eta: 1.0, tag: data-aug-4, epochs: 200, depth: 10, t: 20, weight_decay: 1e-5, mul: 0, seed: 4}
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: aalig, eta: 0.1, tag: data-aug-4, epochs: 200, depth: 10, t: 20, mul: 0, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: aalig, eta: 0.1, tag: data-aug-4, epochs: 200, depth: 10, t: 20, weight_decay: 1e-3, mul: 0, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: aalig, eta: 0.1, tag: data-aug-4, epochs: 200, depth: 10, t: 20, weight_decay: 1e-4, mul: 0, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: aalig, eta: 0.1, tag: data-aug-4, epochs: 200, depth: 10, t: 20, weight_decay: 1e-5, mul: 0, seed: 4}
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_armijo, tag: data-aug-4, epochs: 200, depth: 10, l2_reg: 1e-3, seed: 4}   
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_armijo, tag: data-aug-4, epochs: 200, depth: 10, l2_reg: 1e-4, seed: 4}   
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_armijo, tag: data-aug-4, epochs: 200, depth: 10, l2_reg: 1e-5, seed: 4}   
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_armijo, tag: data-aug-4, epochs: 200, depth: 10, seed: 4}   
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_polyak, tag: data-aug-4, epochs: 200, depth: 10, l2_reg: 1e-3, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_polyak, tag: data-aug-4, epochs: 200, depth: 10, l2_reg: 1e-4, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_polyak, tag: data-aug-4, epochs: 200, depth: 10, l2_reg: 1e-5, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_polyak, tag: data-aug-4, epochs: 200, depth: 10, seed: 4}
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adam, eta: 0.001, tag: data-aug-4, epochs: 200, depth: 10, weight_decay: 1e-3, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adam, eta: 0.001, tag: data-aug-4, epochs: 200, depth: 10, weight_decay: 1e-4, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adam, eta: 0.001, tag: data-aug-4, epochs: 200, depth: 10, weight_decay: 1e-5, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adam, eta: 0.001, tag: data-aug-4, epochs: 200, depth: 10, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adam, eta: 0.01, tag: data-aug-4, epochs: 200, depth: 10, weight_decay: 1e-3, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adam, eta: 0.01, tag: data-aug-4, epochs: 200, depth: 10, weight_decay: 1e-5, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adam, eta: 0.01, tag: data-aug-4, epochs: 200, depth: 10, weight_decay: 1e-4, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adam, eta: 0.01, tag: data-aug-4, epochs: 200, depth: 10, seed: 4}
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adabound, eta: 0.001, tag: data-aug-4, epochs: 200, depth: 10, weight_decay: 1e-3, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adabound, eta: 0.001, tag: data-aug-4, epochs: 200, depth: 10, weight_decay: 1e-4, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adabound, eta: 0.001, tag: data-aug-4, epochs: 200, depth: 10, weight_decay: 1e-5, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adabound, eta: 0.001, tag: data-aug-4, epochs: 200, depth: 10, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adabound, eta: 0.01, tag: data-aug-4, epochs: 200, depth: 10, weight_decay: 1e-3, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adabound, eta: 0.01, tag: data-aug-4, epochs: 200, depth: 10, weight_decay: 1e-4, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adabound, eta: 0.01, tag: data-aug-4, epochs: 200, depth: 10, weight_decay: 1e-5, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: adabound, eta: 0.01, tag: data-aug-4, epochs: 200, depth: 10, seed: 4}
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: coin, tag: data-aug-4, epochs: 200, depth: 10, l2_reg: 1e-3, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: coin, tag: data-aug-4, epochs: 200, depth: 10, l2_reg: 1e-4, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: coin, tag: data-aug-4, epochs: 200, depth: 10, l2_reg: 1e-5, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: coin, tag: data-aug-4, epochs: 200, depth: 10, seed: 4}
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd, eta: 0.1, tag: data-aug-4,  epochs: 200, depth: 10, T: 100 150, weight_decay: 1e-3, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd, eta: 0.1, tag: data-aug-4,  epochs: 200, depth: 10, T: 100 150, weight_decay: 1e-4, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd, eta: 0.1, tag: data-aug-4,  epochs: 200, depth: 10, T: 100 150, weight_decay: 1e-5, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd, eta: 0.1, tag: data-aug-4,  epochs: 200, depth: 10, T: 100 150, seed: 4}
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd, eta: 1.0, tag: data-aug-4,  epochs: 200, depth: 10, T: 100 150, weight_decay: 1e-3, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd, eta: 1.0, tag: data-aug-4,  epochs: 200, depth: 10, T: 100 150, weight_decay: 1e-4, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd, eta: 1.0, tag: data-aug-4,  epochs: 200, depth: 10, T: 100 150, weight_decay: 1e-5, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd, eta: 1.0, tag: data-aug-4,  epochs: 200, depth: 10, T: 100 150, seed: 4}
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: pal, eta: 1.0, tag: data-aug-4, epochs: 200, depth: 10, l2_reg: 1e-3, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: pal, eta: 1.0, tag: data-aug-4, epochs: 200, depth: 10, l2_reg: 1e-4, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: pal, eta: 1.0, tag: data-aug-4, epochs: 200, depth: 10, l2_reg: 1e-5, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: pal, eta: 1.0, tag: data-aug-4, epochs: 200, depth: 10, seed: 4}
+
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_goldstein, eta: 1.0, tag: data-aug-4, epochs: 200, depth: 10, l2_reg: 1e-3, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_goldstein, eta: 1.0, tag: data-aug-4, epochs: 200, depth: 10, l2_reg: 1e-4, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_goldstein, eta: 1.0, tag: data-aug-4, epochs: 200, depth: 10, l2_reg: 1e-5, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_goldstein, eta: 1.0, tag: data-aug-4, epochs: 200, depth: 10, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_goldstein, eta: 10.0, tag: data-aug-4, epochs: 200, depth: 10, l2_reg: 1e-3, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_goldstein, eta: 10.0, tag: data-aug-4, epochs: 200, depth: 10, l2_reg: 1e-4, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_goldstein, eta: 10.0, tag: data-aug-4, epochs: 200, depth: 10, l2_reg: 1e-5, seed: 4}
+- {model: rn, dataset: cifar10, batch_size: 128, opt: sgd_goldstein, eta: 10.0, tag: data-aug-4, epochs: 200, depth: 10, seed: 4}

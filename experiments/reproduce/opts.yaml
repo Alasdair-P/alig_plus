@@ -1,0 +1,100 @@
+- {model: rn, opt: sgd_armijo, l2_reg: 1e-3}   
+- {model: rn, opt: sgd_armijo, l2_reg: 1e-4}   
+- {model: rn, opt: sgd_armijo, l2_reg: 1e-5}   
+- {model: rn, opt: sgd_armijo}   
+
+- {model: rn, opt: sgd_goldstein, eta: 1.0, l2_reg: 1e-3}
+- {model: rn, opt: sgd_goldstein, eta: 1.0, l2_reg: 1e-4}
+- {model: rn, opt: sgd_goldstein, eta: 1.0, l2_reg: 1e-5}
+- {model: rn, opt: sgd_goldstein, eta: 1.0}
+- {model: rn, opt: sgd_goldstein, eta: 10.0, l2_reg: 1e-3}
+- {model: rn, opt: sgd_goldstein, eta: 10.0, l2_reg: 1e-4}
+- {model: rn, opt: sgd_goldstein, eta: 10.0, l2_reg: 1e-5}
+- {model: rn, opt: sgd_goldstein, eta: 10.0}
+
+- {model: rn, opt: sgd_polyak, l2_reg: 1e-3}
+- {model: rn, opt: sgd_polyak, l2_reg: 1e-4}
+- {model: rn, opt: sgd_polyak, l2_reg: 1e-5}
+- {model: rn, opt: sgd_polyak}
+
+- {model: rn, opt: adam, eta: 0.001, weight_decay: 1e-3}
+- {model: rn, opt: adam, eta: 0.001, weight_decay: 1e-4}
+- {model: rn, opt: adam, eta: 0.001, weight_decay: 1e-5}
+- {model: rn, opt: adam, eta: 0.001}
+- {model: rn, opt: adam, eta: 0.01, weight_decay: 1e-3}
+- {model: rn, opt: adam, eta: 0.01, weight_decay: 1e-5}
+- {model: rn, opt: adam, eta: 0.01, weight_decay: 1e-4}
+- {model: rn, opt: adam, eta: 0.01}
+
+- {model: rn, opt: adabound, eta: 0.001, weight_decay: 1e-3}
+- {model: rn, opt: adabound, eta: 0.001, weight_decay: 1e-4}
+- {model: rn, opt: adabound, eta: 0.001, weight_decay: 1e-5}
+- {model: rn, opt: adabound, eta: 0.001}
+- {model: rn, opt: adabound, eta: 0.01, weight_decay: 1e-3}
+- {model: rn, opt: adabound, eta: 0.01, weight_decay: 1e-4}
+- {model: rn, opt: adabound, eta: 0.01, weight_decay: 1e-5}
+- {model: rn, opt: adabound, eta: 0.01}
+
+- {model: rn, opt: coin, l2_reg: 1e-3}
+- {model: rn, opt: coin, l2_reg: 1e-4}
+- {model: rn, opt: coin, l2_reg: 1e-5}
+- {model: rn, opt: coin}
+
+- {model: rn, opt: sgd, eta: 0.1,  T: 100 150, weight_decay: 1e-3}
+- {model: rn, opt: sgd, eta: 0.1,  T: 100 150, weight_decay: 1e-4}
+- {model: rn, opt: sgd, eta: 0.1,  T: 100 150, weight_decay: 1e-5}
+- {model: rn, opt: sgd, eta: 0.1,  T: 100 150}
+- {model: rn, opt: sgd, eta: 1.0,  T: 100 150, weight_decay: 1e-3}
+- {model: rn, opt: sgd, eta: 1.0,  T: 100 150, weight_decay: 1e-4}
+- {model: rn, opt: sgd, eta: 1.0,  T: 100 150, weight_decay: 1e-5}
+- {model: rn, opt: sgd, eta: 1.0,  T: 100 150}
+
+- {model: rn, opt: alig_plus, eta: 1.0}
+- {model: rn, opt: alig_plus, eta: 1.0, weight_decay: 1e-3}
+- {model: rn, opt: alig_plus, eta: 1.0, weight_decay: 1e-4}
+- {model: rn, opt: alig_plus, eta: 1.0, weight_decay: 1e-5}
+- {model: rn, opt: alig_plus, eta: 0.1}
+- {model: rn, opt: alig_plus, eta: 0.1, weight_decay: 1e-3}
+- {model: rn, opt: alig_plus, eta: 0.1, weight_decay: 1e-4}
+- {model: rn, opt: alig_plus, eta: 0.1, weight_decay: 1e-5}
+
+- {model: rn, opt: pal, eta: 1.0, l2_reg: 1e-3}
+- {model: rn, opt: pal, eta: 1.0, l2_reg: 1e-4}
+- {model: rn, opt: pal, eta: 1.0, l2_reg: 1e-5}
+- {model: rn, opt: pal, eta: 1.0}
+
+- {model: rn, opt: sps, eta: 1.0, l2_reg: 1e-3}
+- {model: rn, opt: sps, eta: 1.0, l2_reg: 1e-4}
+- {model: rn, opt: sps, eta: 1.0, l2_reg: 1e-5}
+- {model: rn, opt: sps, eta: 1.0}
+- {model: rn, opt: sps, eta: 10.0, l2_reg: 1e-3}
+- {model: rn, opt: sps, eta: 10.0, l2_reg: 1e-4}
+- {model: rn, opt: sps, eta: 10.0, l2_reg: 1e-5}
+- {model: rn, opt: sps, eta: 10.0}
+- {model: rn, opt: sps, eta: 100.0, l2_reg: 1e-3}
+- {model: rn, opt: sps, eta: 100.0, l2_reg: 1e-4}
+- {model: rn, opt: sps, eta: 100.0, l2_reg: 1e-5}
+- {model: rn, opt: sps, eta: 100.0}
+
+- {model: rn, opt: alig, eta: 1.0}
+- {model: rn, opt: alig, eta: 1.0, max_norm: 50}
+- {model: rn, opt: alig, eta: 1.0, max_norm: 100}
+- {model: rn, opt: alig, eta: 1.0, max_norm: 200}
+- {model: rn, opt: alig, eta: 0.1}
+- {model: rn, opt: alig, eta: 0.1, max_norm: 50}
+- {model: rn, opt: alig, eta: 0.1, max_norm: 100}
+- {model: rn, opt: alig, eta: 0.1, max_norm: 200}
+
+- {model: rn, batch_size: 128, opt: alig, eta: 1.0, epochs: 200, depth: 10}
+- {model: rn, batch_size: 128, opt: alig, eta: 1.0, epochs: 200, depth: 10, max_norm: 25}
+- {model: rn, batch_size: 128, opt: alig, eta: 1.0, epochs: 200, depth: 10, max_norm: 50}
+- {model: rn, batch_size: 128, opt: alig, eta: 1.0, epochs: 200, depth: 10, max_norm: 100}
+- {model: rn, batch_size: 128, opt: alig, eta: 0.1, epochs: 200, depth: 10}
+- {model: rn, batch_size: 128, opt: alig, eta: 0.1, epochs: 200, depth: 10, max_norm: 25}
+- {model: rn, batch_size: 128, opt: alig, eta: 0.1, epochs: 200, depth: 10, max_norm: 50}
+- {model: rn, batch_size: 128, opt: alig, eta: 0.1, epochs: 200, depth: 10, max_norm: 100}
+
+- {model: rn, batch_size: 128, opt: sps, eta: 100.0, epochs: 200, depth: 10}
+- {model: rn, batch_size: 128, opt: sps, eta: 10.0, epochs: 200, depth: 10}
+- {model: rn, batch_size: 128, opt: sps, eta: 1.0, epochs: 200, depth: 10}
+- {model: rn, batch_size: 128, opt: sps, eta: 0.1, epochs: 200, depth: 10}

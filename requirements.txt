@@ -1,0 +1,15 @@
+nltk
+torch
+tensorflow
+mlogger
+torchvision
+setuptools
+numpy
+visdom
+tqdm
+PyYAML
+psutil
+pandas
+sklearn
+matplotlib
+sps
