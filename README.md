@@ -2,14 +2,12 @@
 This is the repo containing alig_plus code, an optimisation algorithm for no non interpolation deep learning problems [Faking Interpolation Until You Make It](https://opt-ml.org/papers/2021/paper25.pdf) If this code is useful please cite as:
 
 ```
-
 @Article{paren2022stochastic,
   author       = {Paren, Alasdair and Poudel, Rudra PK and Kumar, M Pawan},
   title        = {A Stochastic Bundle Method for Interpolating Networks},
   journal      = {NeurIPS Workshop on Optimization for Machine Learning (OPT21)},
   year         = {2021},
 }
-
 ```
 
 # Abstract
@@ -30,7 +28,7 @@ our approach, which outperforms state of the art adaptive gradient and line sear
 
 # Usage
 
-the ALI-G+ algorthum is written in pytorch and requires indexed dataset be used, this can be easily achieved using the following dataset wrapper:
+the ALI-G+ algorthum is written in PyTorch >= 1.0 in python3. ALI-G+ requires indexed dataset be used, this can be easily achieved using the following dataset wrapper:
 
 ```python
 class IndexedDataset(data.Dataset):
@@ -45,7 +43,6 @@ class IndexedDataset(data.Dataset):
 with this dataset ALI-G+ can be used like any other optimiser with the exception that requires being pass a vector for the indexed of thee xamples in each batch and their corresponding loss values:
 
 ```python
-
 optimizer = AligPlus(model.parameters(), args.lr, args.train_size, args.epochs momentum=0.9)
 
 for idx, data in data_loader:
@@ -59,7 +56,6 @@ for idx, data in data_loader:
 
 % additionally alig+ require the following method be called after each epoch 
 optimizer.epoch_()
-
 ```
 
 # Code Requirements and Installation
@@ -75,7 +71,6 @@ python setup.py install
 
 if required, download relievent dataset and set the paths in the data/loaders.py.
 svhn, cifar10 and cifar 100 should download automatically.
-
 ```
 
 # Reproducing the Results
@@ -83,13 +78,11 @@ svhn, cifar10 and cifar 100 should download automatically.
 Please first complete the code installation as described above. The following command lines assume that the current working directory is "/experiments" . 
 
 ```python
-
 cd ../experiments 
-
 ```
 To reproduce image classifacation results from paper run one of the following commands:
 
-```python
+```
 python reproduce/svhn.py
 python reproduce/cifar10.py
 python reproduce/cifar100.py
