@@ -1,8 +1,8 @@
 import torch.optim
 from alig.th import AliG, Yogi, AdamW
 from alig_plus import AligPlus
+from global_alig_plus import GlobalAligPlus
 from pal import PalOptimizer
-from sbd import SBD
 #from alig2 import AliG2
 from alig.th.projection import l2_projection
 from pal import PalOptimizer
@@ -35,6 +35,9 @@ def get_optimizer(args, model, loss, parameters):
     elif args.opt == 'alig_plus':
         optimizer = AligPlus(parameters, lr=args.eta, data_size=data_size, weight_decay=args.weight_decay,
                           epochs=args.epochs, momentum=args.momentum, K=args.K)
+    elif args.opt == 'global_alig_plus':
+        optimizer = GlobalAligPlus(parameters, lr=args.eta, data_size=data_size, weight_decay=args.weight_decay,
+                          epochs=args.epochs, momentum=args.momentum, K=args.K)
     elif args.opt == 'alig':
         optimizer = AliG(parameters, max_lr=args.eta, momentum=args.momentum,
                          projection_fn=lambda: l2_projection(parameters, args.max_norm))
@@ -49,9 +52,6 @@ def get_optimizer(args, model, loss, parameters):
     elif args.opt == 'alig':
         optimizer = AliG(parameters, max_lr=args.eta, momentum=args.momentum,
                          projection_fn=lambda: l2_projection(parameters, args.max_norm))
-    elif args.opt == 'sbd':
-        optimizer = SBD(parameters, eta=args.eta, n=args.k, momentum=args.momentum,
-                         projection_fn=lambda: l2_projection(parameters, args.max_norm), debug=args.debug)
     elif args.opt == "sgd_armijo":
         optimizer = sls.Sls(parameters,
                     c=0.1,
@@ -93,3 +93,13 @@ def get_optimizer(args, model, loss, parameters):
 
     return optimizer
 
+def decay_optimizer(args, optimizer, decay_factor=0.1):
+    if isinstance(optimizer, torch.optim.SGD):
+        for param_group in optimizer.param_groups:
+            param_group['lr'] *= decay_factor
+
+            optimizer.step_size = optimizer.param_groups[0]['lr']
+            optimizer.step_size_unclipped = optimizer.param_groups[0]['lr']
+        else:
+            print('decay learning rate only supported for SGD')
+            # raise ValueError

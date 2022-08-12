@@ -1,9 +1,0 @@
-
-- {model: rn, batch_size: 128, opt: aalig, eta: 1.0, epochs: 200, depth: 10}
-- {model: rn, batch_size: 128, opt: aalig, eta: 1.0, epochs: 200, depth: 10, weight_decay: 1e-3}
-- {model: rn, batch_size: 128, opt: aalig, eta: 1.0, epochs: 200, depth: 10, weight_decay: 1e-4}
-- {model: rn, batch_size: 128, opt: aalig, eta: 1.0, epochs: 200, depth: 10, weight_decay: 1e-5}
-- {model: rn, batch_size: 128, opt: aalig, eta: 0.1, epochs: 200, depth: 10}
-- {model: rn, batch_size: 128, opt: aalig, eta: 0.1, epochs: 200, depth: 10, weight_decay: 1e-3}
-- {model: rn, batch_size: 128, opt: aalig, eta: 0.1, epochs: 200, depth: 10, weight_decay: 1e-4}
-- {model: rn, batch_size: 128, opt: aalig, eta: 0.1, epochs: 200, depth: 10, weight_decay: 1e-5}
