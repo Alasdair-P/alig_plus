@@ -56,7 +56,6 @@ def _add_model_parser(parser):
                           help='data file with model')
     m_parser.set_defaults(pretrained=False, wrn=False, densenet=False, bottleneck=True)
 
-
 def _add_optimization_parser(parser):
     o_parser = parser.add_argument_group(title='Training parameters')
     o_parser.add_argument('--epochs', type=int, default=None,

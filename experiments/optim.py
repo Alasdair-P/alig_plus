@@ -6,7 +6,7 @@ from pal import PalOptimizer
 #from alig2 import AliG2
 from alig.th.projection import l2_projection
 from pal import PalOptimizer
-import sps
+from adamp import AdamP
 from pkg import sls
 from pkg.src.optimizers import others
 import sps
@@ -36,6 +36,9 @@ def get_optimizer(args, model, loss, parameters):
         optimizer = AligPlus(parameters, lr=args.eta, data_size=data_size, weight_decay=args.weight_decay,
                           epochs=args.epochs, momentum=args.momentum, K=args.K)
     elif args.opt == 'global_alig_plus':
+        optimizer = GlobalAligPlus(parameters, lr=args.eta, data_size=data_size, weight_decay=args.weight_decay,
+                          epochs=args.epochs, momentum=args.momentum, K=args.K)
+    elif args.opt == 'galig_plus':
         optimizer = GlobalAligPlus(parameters, lr=args.eta, data_size=data_size, weight_decay=args.weight_decay,
                           epochs=args.epochs, momentum=args.momentum, K=args.K)
     elif args.opt == 'alig':
@@ -77,6 +80,8 @@ def get_optimizer(args, model, loss, parameters):
         optimizer = others.AdaBound(parameters, lr=args.eta, weight_decay=args.weight_decay)
     elif args.opt == 'coin':
         optimizer = others.CocobBackprop(parameters)
+    elif args.opt == 'adamp':
+        optimizer = AdamP(parameters, lr=args.eta, betas=(0.9, 0.999), weight_decay=args.weight_decay)
     else:
         raise ValueError(args.opt)
 

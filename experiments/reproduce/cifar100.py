@@ -4,18 +4,19 @@ import yaml
 
 def create_jobs():
 
-    template = "python main.py --no_tb --no_visdom --jade "
-    no_data_aug = "--no_data_augmentation --tag nda "
-    data_aug = "--tag da "
-    data_set = "--dataset cifar100 "
-
     jobs = []
+
+    template = "python main.py --no_tb --no_visdom --jade "
+    no_data_aug = "--no_data_augmentation --tag nda_1 "
+    data_aug = " --tag da_1 "
+    data_set = " --dataset cifar100 "
 
     t_nda = template + data_set + no_data_aug
     t_da = template + data_set + data_aug
 
     list_jobs(t_nda, jobs)
     list_jobs(t_da,  jobs)
+
     return jobs
 
 
@@ -26,7 +27,8 @@ def list_jobs(template, jobs):
     dn_opts = " --depth 40 --growth 40 --epochs 300 "
     mlp_opts = " "
 
-    with open("reproduce/opts.yaml", "r") as f:
+    #with open("reproduce/opts.yaml", "r") as f:
+    with open("reproduce/global_alig_plus.yaml", "r") as f:
         hparams = yaml.safe_load(f)
     for hparam in hparams:
         command = template + " ".join("--{} {}".format(key, value) for key, value in hparam.items())

@@ -85,16 +85,11 @@
 - {model: rn, opt: alig, eta: 0.1, max_norm: 100}
 - {model: rn, opt: alig, eta: 0.1, max_norm: 200}
 
-- {model: rn, batch_size: 128, opt: alig, eta: 1.0, epochs: 200, depth: 10}
-- {model: rn, batch_size: 128, opt: alig, eta: 1.0, epochs: 200, depth: 10, max_norm: 25}
-- {model: rn, batch_size: 128, opt: alig, eta: 1.0, epochs: 200, depth: 10, max_norm: 50}
-- {model: rn, batch_size: 128, opt: alig, eta: 1.0, epochs: 200, depth: 10, max_norm: 100}
-- {model: rn, batch_size: 128, opt: alig, eta: 0.1, epochs: 200, depth: 10}
-- {model: rn, batch_size: 128, opt: alig, eta: 0.1, epochs: 200, depth: 10, max_norm: 25}
-- {model: rn, batch_size: 128, opt: alig, eta: 0.1, epochs: 200, depth: 10, max_norm: 50}
-- {model: rn, batch_size: 128, opt: alig, eta: 0.1, epochs: 200, depth: 10, max_norm: 100}
-
-- {model: rn, batch_size: 128, opt: sps, eta: 100.0, epochs: 200, depth: 10}
-- {model: rn, batch_size: 128, opt: sps, eta: 10.0, epochs: 200, depth: 10}
-- {model: rn, batch_size: 128, opt: sps, eta: 1.0, epochs: 200, depth: 10}
-- {model: rn, batch_size: 128, opt: sps, eta: 0.1, epochs: 200, depth: 10}
+- {model: rn, opt: adamp, eta: 0.01, weight_decay: 1e-3}
+- {model: rn, opt: adamp, eta: 0.01, weight_decay: 1e-4}
+- {model: rn, opt: adamp, eta: 0.01, weight_decay: 1e-5}
+- {model: rn, opt: adamp, eta: 0.01, weight_decay: 0}
+- {model: rn, opt: adamp, eta: 0.001, weight_decay: 1e-3}
+- {model: rn, opt: adamp, eta: 0.001, weight_decay: 1e-4}
+- {model: rn, opt: adamp, eta: 0.001, weight_decay: 1e-5}
+- {model: rn, opt: adamp, eta: 0.001, weight_decay: 0}

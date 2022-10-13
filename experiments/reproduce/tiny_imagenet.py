@@ -4,7 +4,7 @@ import yaml
 
 def create_jobs():
 
-    template = "python main.py --no_tb --no_visdom --batch_size 128 --epochs 200 --depth 10 "
+    template = "CUDA_VISIBLE_DEVICE=0 taskset -c 0-2  python main.py --no_tb --no_visdom --batch_size 128 --epochs 200 --depth 10 "
     no_data_aug = "--no_data_augmentation --tag nda "
     data_aug = "--tag da "
     data_set = "--dataset tiny_imagenet "
@@ -26,7 +26,7 @@ def list_jobs(template, jobs):
     dn_opts = " --depth 40 --growth 40 --epochs 300 "
     mlp_opts = " "
 
-    with open("reproduce/opts.yaml", "r") as f:
+    with open("reproduce/galig_plus.yaml", "r") as f:
         hparams = yaml.safe_load(f)
     for hparam in hparams:
         command = template + " ".join("--{} {}".format(key, value) for key, value in hparam.items())

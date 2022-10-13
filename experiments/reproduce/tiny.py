@@ -27,7 +27,7 @@ def list_jobs(template, jobs):
     mlp_opts = " "
 
     #with open("reproduce/opts.yaml", "r") as f:
-    with open("reproduce/global_alig_plus.yaml", "r") as f:
+    with open("reproduce/galig_plus.yaml", "r") as f:
         hparams = yaml.safe_load(f)
     for hparam in hparams:
         command = template + " ".join("--{} {}".format(key, value) for key, value in hparam.items())
@@ -43,7 +43,6 @@ def list_jobs(template, jobs):
             raise ValueError("Model {} not recognized".format(hparam["model"]))
         jobs.append(command)
     return jobs
-
 
 def run_command(command, noprint=True):
     command = " ".join(command.split())

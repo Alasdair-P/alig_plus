@@ -40,7 +40,7 @@ class GlobalAligPlus(torch.optim.Optimizer):
 
         params_list = list(params)
         defaults = dict(max_lr=lr, momentum=momentum, step_size=None, wd=weight_decay)
-        super(AligPlus, self).__init__(params_list, defaults)
+        super(GlobalAligPlus, self).__init__(params_list, defaults)
         print('creating aalig optimiser')
 
         self.k = K
@@ -62,8 +62,9 @@ class GlobalAligPlus(torch.optim.Optimizer):
     def update_lb(self):
         print('updating aovs')
         reached_aov = (self.lbars.mean().le(self.aovs.mean())).float() # zero one mask for if a give aov has been reached
-        self.aov_minus_last = (0.5*self.lbar.mean() - 0.5*self.aovs.mean()).clamp(min=0).mul(1-reached_aov) + self.aov_minus_last.mean().mul(reached_aov)
+        self.aov_minus_last = (0.5*self.lbars.mean() - 0.5*self.aovs.mean()).clamp(min=0).mul(1-reached_aov) + self.aov_minus_last.mean().mul(reached_aov)
         self.aovs = (0.5*self.aovs.mean() + 0.5*self.lbars.mean()).mul(1-reached_aov) + (self.aovs.mean() - 0.5*self.aov_minus_last.mean()).clamp(min=0).mul(reached_aov)
+        print('aov', self.aovs, 'aov last', self.aov_minus_last)
 
     @torch.autograd.no_grad()
     def epoch_(self):
@@ -106,10 +107,10 @@ class GlobalAligPlus(torch.optim.Optimizer):
     def step(self, closure):
         idx, losses = closure()
 
-        self.ls[idx] = losses
+        self.ls[idx] = losses.detach().clone()
 
         #self.compute_step_size(losses, aovs)
-        self.compute_step_size(self.ls.mean(), self.aovs.mean())
+        self.compute_step_size(losses.detach().clone().mean(), self.aovs.mean())
 
         for group in self.param_groups:
             step_size = group["step_size"]
