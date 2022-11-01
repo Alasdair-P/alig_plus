@@ -1,12 +1,12 @@
 # ALI-G+
-This is the repo containing alig_plus code, an effective single hyperparameter optimisation algorithm for non interpolating deep learning problems. Please see [Faking Interpolation Until You Make It](https://opt-ml.org/papers/2021/paper25.pdf) for full details. If this code is useful please cite as:
+This is the repo containing alig_plus code, an effective single hyperparameter optimisation algorithm for non interpolating deep learning problems. Please see [Faking Interpolation Until You Make It](https://openreview.net/pdf?id=OslAMMF4ZP) for full details. If this code is useful please cite as:
 
 ```
 @Article{paren2022stochastic,
   author       = {Paren, Alasdair and Poudel, Rudra PK and Kumar, M Pawan},
   title        = {A Stochastic Bundle Method for Interpolating Networks},
-  journal      = {NeurIPS Workshop on Optimization for Machine Learning (OPT21)},
-  year         = {2021},
+  journal      = {Transactions on Machine Learning Research},
+  year         = {2022},
 }
 ```
 
